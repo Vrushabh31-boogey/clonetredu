@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="tredu_logo_28x28.png">
+    <title>tredu</title>
+</head>
+<style>
+    body{
+        background-image: url('https://img.freepik.com/free-photo/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-product_1258-54682.jpg?ga=GA1.1.1001083203.1747985514&semt=ais_items_boosted&w=740');
+        background-size: cover;
+        font-family: Bricolage Grotesque,sans-serif!important;
+    }
+
+
+    .herosection {
+        position: relative;
+        width: 100%;
+    }
+
+    .herosection
+    .cornerBox {
+        position: absolute;
+        top: -100px;
+        width: 250px;
+        aspect-ratio: 1;
+        background-color: #ac0bed;
+        filter: blur(110px);
+        opacity: .6;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        left: -100px;
+    }
+
+    .herosection
+    .content{
+        position: relative;
+        z-index: 999;
+    }
+
+    .fixContainer {
+        width: min(1140px,80%);
+        margin: auto;
+    }
+
+    .header_navbarMain__q9Z5G
+    .header_navbarContainer__rqdf_ {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .header_sitelogo__BlGDY {
+        width: min(150px,90px);
+    }
+
+    img {
+        display: block;
+        width: 10%;
+        height: auto;
+        position: relative;
+        margin-top: 23px;
+    }
+
+    .herosection
+    .content .trade {
+        display: grid;
+        grid-template-columns: 40% auto;
+        margin-top: 0rem;
+        align-items: flex-start;
+        padding: 0rem 0;
+    }
+
+    .herosection
+    .content .trade .info {
+        display: flex;
+        color: #fff;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .herosection
+    .content .trade .info h1 {
+        font-size: 3rem;
+    }
+
+    .herosection .content .info h1 span {
+        background: linear-gradient(94deg,#ac0bed -.57%,#ca0241 96.98%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: bricolage Grotesque;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .common,
+    .herosection .content .info h1 span {
+        background: linear-gradient(94deg,#ac0bed -.57%,#ca0241 96.98%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: bricolage Grotesque;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .herosection
+    .content .info .pera {
+        color: #fff;
+        font-size: 1rem;
+        line-height: 20px;
+        font-weight: 300;
+        opacity: .5;
+        width: min(800px,70%);
+        margin-bottom: 2rem;
+    }
+
+    .mobile_inputbox__1gJeL {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #6e4d7d;
+    background: rgba(56, 28, 69, 0.35);
+    width: min(380px, 100%);
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 4px 0 1rem;
+}
+
+.mobile_inputbox__1gJeL input {
+    flex: 1;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+
+.mobile_btn__qfrys button {
+    background: linear-gradient(94deg, #a90cf9 0%, #ca023b 100%);
+    padding: 10px 1.5rem;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.mobile_btn__qfrys button:hover {
+    opacity: 0.9;
+}
+
+
+    .listBox {
+        margin-top: 1.2rem;
+    }
+
+    .listBox .list {
+        display: flex;
+        color: #fff;
+        gap: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .listBox .list
+    .listimg {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        background: radial-gradient(77.61% at 35.71% 13.1%, #ffd182 0,#ff9a03 100%);
+        text-align: center;
+        border-radius: 50%;
+    }
+
+    .listBox .list
+    .listimg {
+        object-fit: none;
+        scale: .8;
+    }
+
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .listBox .list {
+        display: flex;
+        color: #fff;
+        gap: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .listBox .list .listimg {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        background: radial-gradient(77.61% 77.61% at 35.71% 13.1%,#ffd182 0,#ff9a03 100%);
+        text-align: center;
+        border-radius: 50%;
+    }
+
+    .listBox .list .listimg img {
+        object-fit: none;
+        scale: .8;
+    }
+
+    .p1 {
+        display: block;
+        margin-block-start: -2em;
+        margin-block-end: 1em;
+        margin-inline-start: 60px;
+        margin-inline-end: 0px;
+    }
+
+    
+    .p2 {
+        display: block;
+        margin-block-start: -2em;
+        margin-block-end: 1em;
+        margin-inline-start: 60px;
+        margin-inline-end: 0px;
+    }
+
+    .secondSection
+    .content2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .secondSection
+    .leftBox {
+        width: 30%;
+    }
+
+    .secondSection
+    .leftBox .leftimg {
+        width: min(400px,253px);
+        padding-left: 2rem;
+    }
+
+    /*img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }*/
+
+    .secondSection
+    .rightBox {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .secondSection .rightBox .heading {
+        border-radius: 10px;
+        padding: 1rem;
+        color: #fff;
+        width: min(400px,98%);
+        border: 2px solid #88639a;
+        background: linear-gradient(254deg,#381c45 -10.04%,rgba(27,8,36,0) 48.12%,#3a1d47 103.18%);
+    }
+
+    .secondSection .rightBox .p3, h2 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin-top: 5px;
+    }
+
+    .secondSection .rightBox h2 span {
+        color: #ac0bed;
+    }
+
+    .partnerSlider,
+    .thirdSection .companyImageSlider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-android .swiper-slide, .swiper-ios .swiper-slide, .swiper-wrapper {
+        transform: translateZ(0);
+    }
+
+    .swiper-backface-hidden .swiper-slide {
+        transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .swiper-slide {
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition-property: transform;
+        display: block;
+    }
+
+    .fourthSection .content4 {
+        display: flex;
+        margin-top: 6rem;
+        align-items: center;
+        margin-bottom: 8rem;
+    }
+
+    .fourthSection .content4 .treduIntro {
+        width: 50%;
+    }
+
+    .fourthSection .content4 .treduIntro .heading {
+        color: #fff;
+    }
+
+    .fourthSection .content4 .treduIntro .heading h1 {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+
+    .fourthSection .content4 .treduIntro .heading span {
+        background: linear-gradient(94deg,#ac0bed -.57%,#ca0241 96.98%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Bricolage Grotesque;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .fourthSection .content4 .treduIntro .heading h1 {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+
+    .fourthSection .content4 .treduIntro .heading h4 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-top: 12px;
+    }
+
+    .fourthSection .content4 .treduIntro .pera {
+        color: #fff;
+        margin-top: 1rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+        line-height: 1.8rem;
+        text-align: justify;
+        width: min(480px,100%);
+        font-family: Poppins,sans-serif;
+    }
+
+    .fourthSection .content4 .treduIntroRight {
+        position: relative;
+        width: 50%;
+    }
+
+    .fourthSection .content4 .treduIntroRight .imageBox {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    .fourthSection .content4 .treduIntroRight .blur {
+        height: 40%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        z-index: -1;
+    }
+
+    .fourthSection .content4 .treduIntroRight .imageBox img {
+        width: min(500px,90%);
+        position: relative;
+        z-index: 4;
+    }
+
+    .fifthSection {
+        position: relative;
+        min-height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fixContainer {
+        width: min(1420px,90%);
+        margin: auto;
+    }
+
+    .fifthSection .fixContainer p {
+        position: relative;
+        color: #1b0824;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .fifthSection .fixContainer h1 {
+        position: relative;
+        color: #1b0824;
+        font-weight: 400;
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 1rem 0;
+    }
+
+    .fifthSection .fixContainer span {
+        background: linear-gradient(94deg,#ac0bed -.57%,#ca0241 96.98%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Bricolage Grotesque;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    /*.fifthSection .fifthSectionSliderWrapper {
+        position: relative;
+    }*/
+
+    .fifthSection .fifthSectionSliderwrapper .swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem; /* adds space between cards */
+        transform: none !important; /* remove Swiper default horizontal scroll effect */
+    }
+
+    .fifthSection .fifthSectionSliderWrapper .fifthSectionSlider {
+        padding: 1rem 0;
+    }
+
+    .fifthSection .fifthSectionSliderWrapper .fifthSectionSlider .fifthSectionSliderSlide {
+        width: 280px;
+    }
+
+    .fifthSection .fifthSectionSliderWrapper .fifthSectionSlider .fifthSectionSliderSlide {
+        width: 280px;
+    }
+
+    .fifthSection .fifthSectionSliderWrapper .fifthSectionSlider .fifthSectionSliderSlide {
+        width: 280px;
+    }
+
+    .fifthSection .fifthSectionSliderWrapper .bottomLine {
+        position: absolute;
+        bottom: -2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 80%;
+        background-color: #d3d3d3;
+        border-radius: 20px;
+        bottom: 4px;
+    }
+
+    .fifthSection .fifthSectionSliderWrapper .bottomLine .innerLine {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 280px;
+        background: #ac0bed;
+        border-radius: 20px;
+    }
+
+    .fifthSection .fifthSectionSliderWrapper .bottomLine .innerLine:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 10px;
+        width: 30px;
+        background: #ac0bed;
+        -webkit-clip-path: polygon(50% 0,0 100%,100% 100%);
+        clip-path: polygon(50% 0,0 100%,100% 100%);
+    }
+
+    .fixContainer {
+        width: min(1420px,90%);
+        margin: auto;
+    }
+
+    .experienceHeading {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-horizontal {
+        touch-action: pan-y;
+    }
+
+    .experienceSlider .swiper-wrapper {
+        justify-content: center;
+    }
+
+    .swiper-backface-hidden .swiper-slide {
+        transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .videos {
+        width: 100%;
+        margin: auto;
+        position: relative;
+        left: -87px;
+    }
+
+    .videos video {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .sevenSection {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        overflow: hidden;
+        padding: 4rem 1rem;
+        margin-top: 3rem;
+    }
+
+    .packages {
+        border-bottom: 2px solid #3a1d47;
+    }
+
+    .fixContainer {
+        width: min(1420px,90%);
+        margin: auto;
+    }
+
+    .common, .fourthSection .content4 .treduIntro .heading span {
+        background: linear-gradient(94deg,#ac0bed -.57%,#ca0241 96.98%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Bricolage Grotesque;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .packageContainer {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .packageOne, .packageThree {
+        width: min(400px,98%);
+        position: relative;
+        padding: 2rem 3rem 4rem;
+        border: 20px solid rgba(170,12,238,.33);
+        background: #1b0824;
+        border-bottom: 0;
+        transition: .2s ease-out;
+        z-index: 3;
+    }
+
+    .packageOne .imageBox, .packageThree .imageBox, .packageTwo .imageBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .packageOne .imageBox h1 {
+        color: #dd79ff;
+        font-size: 2.5rem;
+    }
+
+    .packageOne .listbox, .packageThree .listbox, .packageTwo .listbox {
+        margin-top: 2rem;
+        position: relative;
+    }
+
+    .packageOne .listbox ul, .packageThree .listbox ul, .packageTwo .listbox ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .packageOne .listbox ul li, .packageThree .listbox ul li, .packageTwo .listbox ul li {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 1rem;
+    }
+
+    .packageTwo {
+        width: min(400px,99%);
+        position: relative;
+        padding: 2rem 3rem 6rem;
+        border: 20px solid #ffaa29;
+        background: #1b0824;
+        border-bottom: 0;
+        transition: .3s ease;
+    }
+
+    .packageOne .imageBox, .packageThree .imageBox, .packageTwo .imageBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .packageTwo .imageBox h1 {
+        background: radial-gradient(77.61% 77.61% at 35.71% 13.1%,#ffd182 0,#ff9a03 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2.9rem;
+    }
+
+    .packageOne .listbox, .packageThree .listbox, .packageTwo .listbox {
+        margin-top: 2rem;
+        position: relative;
+    }
+
+    .packageOne .listbox ul, .packageThree .listbox ul, .packageTwo .listbox ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .packageOne .listbox ul li, .packageThree .listbox ul li, .packageTwo .listbox ul li {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 1rem;
+    }
+
+    .packageOne, .packageThree {
+        width: min(400px,98%);
+        position: relative;
+        padding: 2rem 3rem 4rem;
+        border: 20px solid rgba(170,12,238,.33);
+        background: #1b0824;
+        border-bottom: 0;
+        transition: .2s ease-out;
+        z-index: 3;
+    }
+
+    .packageOne .imageBox, .packageThree .imageBox, .packageTwo .imageBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .packageThree .imageBox h1 {
+        color: #ff74a4;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .packageOne .listbox, .packageThree .listbox, .packageTwo .listbox {
+        margin-top: 2rem;
+        position: relative;
+    }
+
+    .packageOne .listbox ul, .packageThree .listbox ul, .packageTwo .listbox ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .packageOne .listbox ul li, .packageThree .listbox ul li, .packageTwo .listbox ul li {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 1rem;
+    }
+
+    .fixContainer {
+        width: min(1420px,90%);
+        margin: auto;
+    }
+
+    .eightHeading {
+        font-weight: 600;
+        font-size: 3rem;
+        color: #fff;
+        text-align: center;
+        margin: 1rem 0;
+        font-family: Bricolage Grotesque;
+    }
+
+    .mobilebenefitSection {
+        display: none;
+    }
+
+    .fixContainer {
+        width: min(1420px,90%);
+        margin: auto;
+    }
+
+    .benefitsContent {
+        height: 200vh;
+        padding-top: 1rem;
+        position: relative;
+    }
+
+    .benefitsContentWrapper {
+        height: 120vh;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .benefits {
+        display: flex;
+        width: 100%;
+        margin-left: 1200px;
+    }
+
+    .benefitLeft {
+        width: 50%;
+    }
+
+    .benefitLeft .benefitBlur {
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        z-index: 1;
+        background-color: #aa0cee;
+        padding: 3rem;
+        filter: blur(100px);
+        opacity: .3;
+    }
+
+    .benefitRight {
+        width: 50%;
+    }
+
+    .card.active {
+        opacity: 1;
+    }
+
+    .card {
+        border-radius: 20px;
+        border: 2px solid #88639a;
+        background: linear-gradient(254deg, #381c45 -10.04%, rgba(27,8,36,0) 48.12%, #3a1d47 103.18%);
+        width: min(550px, 98%);
+        padding: 1rem;
+        display: flex;
+        gap: 3rem;
+        color: #fff;
+        align-items: center;
+        transition: height .2s, .2s ease-in;
+        margin-bottom: 1rem;
+    }
+
+    .card .title {
+        overflow: hidden;
+        transition: height 4s;
+    }
+
+    .fixContainer {
+        width: min(1420px,90%);
+        margin: auto;
+    }
+
+    .tenheading {
+        font-weight: 300;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .tenheading span {
+        background: linear-gradient(94deg,#ac0bed -.57%,#ca0241 96.98%);
+        padding: 8px 1rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+
+    .heading2 {
+        font-size: 2.5rem;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+    .twelveSection {
+        margin: 4rem 0;
+    }
+
+    .twelveSection .twelveContent h1 .prestigous {
+        border-radius: 10px;
+        border: 2px solid rgba(27,8,36,0);
+        background: linear-gradient(258deg,rgba(27,8,36,0) -5.39%,#3a1d47 98.09%);
+        display: inline-block;
+        padding: 0 1rem;
+        position: relative;
+    }
+
+    .common, .fourthSection .content4 .treduIntro .heading span {
+        background: linear-gradient(94deg,#ac0bed -.57%,#ca0241 96.98%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Bricolage Grotesque;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .twelveSection {
+        margin: 4rem 0;
+    }
+
+    .thirteen {
+        margin-top: 8rem;
+    }
+
+    .fixContainer {
+        width: min(1420px,90%);
+        margin: auto;
+    }
+
+    .common, .fourthSection .content4 .treduIntro .heading span {
+        background: linear-gradient(94deg,#ac0bed -.57%,#ca0241 96.98%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Bricolage Grotesque;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .fixContainer {
+        width: min(1420px,90%);
+        margin: auto;
+    }
+
+    .thirteen .thirteencontent .community {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .communityLeft {
+        width: 50%;
+    }
+
+    .communityLeft .image {
+        width: min(800px,98%);
+        margin: auto;
+    }
+
+    .communityright {
+        width: 50%;
+    }
+
+    .communityright .social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .communityright .social .apple, .google {
+        display: flex;
+        padding: 12px 2rem;
+        position: relative;
+        width: min(350px,100%);
+        text-decoration: none;
+        margin-bottom: 1rem;
+        align-items: center;
+        border-radius: 10px;
+        border: 4.491px solid #3a1d47;
+        background: linear-gradient(254deg,#1b0824 2.63%,#3a1d47 97.93%);
+    }
+
+    .secondSection .rightBox p, h2 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin-top: 5px;
+    }
+
+    .finalSection .final {
+        display: flex;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-radius: 20px;
+        background: hsla(0,0%,100%,.2);
+        padding: 4rem;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .fixContainer {
+        width: min(1420px,90%);
+        margin: auto;
+    }
+
+    .box2, .finalSection .final .box1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .finalSection .final .box1 {
+        gap: 1.5rem;
+    }
+
+    .mobile_inputbox__1gJeL {
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        border: 2px solid #6e4d7d;
+        background: rgba(56,28,69,.35);
+        width: min(380px,100%);
+        justify-content: space-between;
+        height: 50px;
+        padding: 0 4px 0 1rem;
+    }
+
+    .mobile_inputbox__1gJeL input {
+        outline: none;
+        border: none;
+        background: transparent;
+        color: #fff;
+    }
+
+    /*.mobile_btn__qfryS button {
+        background: var(--tredu-purple-pink-gradient, linear-gradient(94deg,#a90cf9 0,#ca023b 100%) );
+        padding: 10px 1.5rem;
+        border-radius: 10px;
+        color: #fff;
+        border: none;
+        outline: none;
+    }*/
+
+    .box2 {
+        color: #fff;
+    }
+    .box2, .finalSection .final .box1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box2 h2 {
+        text-align: start;
+        font-size: 1.5rem;
+    }
+    .secondSection .rightBox p, h2 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin-top: 5px;
+    }
+
+    .box2 ul {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+        transition: .3s;
+    }
+
+    .box2 ul li a {
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .box2 ul li a:after {
+        position: absolute;
+        content: "";
+        margin-top: 5px;
+        width: 0;
+        height: 1px;
+        background-color: #fff;
+        top: 100%;
+        left: 0;
+        transition: .3s;
+    }
+
+    .box2 ul li a {
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .box2 ul li a:after {
+        position: absolute;
+        content: "";
+        margin-top: 5px;
+        width: 0;
+        height: 1px;
+        background-color: #fff;
+        top: 100%;
+        left: 0;
+        transition: .3s;
+    }
+
+    .fixContainer {
+        width: min(1420px,90%);
+        margin: auto;
+    }
+</style>
+<body>
+    <main>
+        <section class="herosection">
+            <div class="cornerBox"></div>
+            <div class="fixContainer content">
+                <nav class="header_navbarMain__q9Z5G">
+                    <div class="header_navbarContainer__rqdf_">
+                        <div class="header_sitelogo__BlGDY">
+                            <img src="C:\Users\adity\Desktop\vrushabh\treduclonewebsite\images\logo.png" alt="Tredu Logo" width="28" height="28">
+                        </div>
+                    </div>
+                </nav>
+                <div class="trade">
+                    <div class="info">
+                        <h1 class="heading">
+                            Trade
+                            <span> Smarter </span>
+                            Learn Faster, Earn
+                            <!-- -->
+                            <span class="common"> Better.</span>
+                        </h1>
+                        <p class="pera">
+                            unlock the art of trading with live classes and expert courses on our cutiing edge online trading edtech platform.
+                        </p>
+                        <div class="mobileBox">
+                            <form action="javascript:void(0);">
+                                <div class="mobile_inputbox__1gJeL">
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        required
+                                        pattern="\d{10}"
+                                        placeholder="Enter Mobile Number"
+                                        name="phone"
+                                        />
+                                        <div class="mobile_btn__qfrys">
+                                            <button type="submit">Sign Up</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        <div class="listbox">
+                            <div class="listing">
+                                    <img alt="group1" loading="eager" width="18" height="15" decoding="async" data-nimg="1" style="color: transparent;" src="C:\Users\adity\Desktop\vrushabh\treduclonewebsite\images\slogo1.png">
+                                </div>
+                                <p class="p1">Sign p for free 7 day trail</p>
+                            <div class="list listtwo">
+                                <div class="listimg">
+                                    <img alt="group2" loading="eager" width="18" height="15" decoding="async" data-nimg="1" style="color: transparent;" src="C:\Users\adity\Desktop\vrushabh\treduclonewebsite\images\slogo2.png">
+                                </div>
+                                <p class="p2">No credit card reqired</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image2" style="position: relative;display: flex;justify-content: center;aspect-ratio: 16/8;">
+                        <div style="position: relative;width: min(600px,90%);top: 0;left: 0;" class="imageanimation">
+                            <img alt="imae2" loading="eager" width="600" height="300" decoding="async" data-nimg="1" style="color: transparent;position: absolute;top: -193px;left: -140px;width: 145%;" src="images/mlogo.png">
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 100%;height: 2px;background: #fff;opacity: 2;"></div>
+            </div>
+        </section>
+        <section class="secondSection">
+            <div class="fixContainer content2">
+                <div class="leftBox">
+                    <div class="leftimg">
+                        <img alt="up" loading="lazy" width="570" height="127" decoding="async" data-nimg="1" style="color: transparent;width: 100%;" src="images/secpic.png">
+                    </div>
+                </div>
+                <div class="rightBox">
+                    <div class="heading">
+                        <p class="p3">A Community of</p>
+                        <h2>
+                            <span>100K+</span>
+                            "Trading Aspirants"
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="thirdSection">
+            <div style="background-color: #32213A;padding: 2rem 0;margin-top: 2rem;" class="thirdSectionSlider">
+                <div class="swiper swiper-initialized swiper-horizontal mySwiper companyImageSlider swiper-backface-hidden">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide swiper-slide-active" style="width: 661.2px;">
+                            <img alt="sliderImg" loading="eager" width="228" height="106" decoding="async" data-nimg="1" style="color: transparent;" src="images/thirpic.png">
+                        </div>
+                        <div class="swiper-slide slide swiper-slide-next" style="width: 661.2px;">
+                            <img alt="sliderImg" loading="eager" width="228" height="106" decoding="async" data-nimg="1" style="color: transparent;" src="images/thirpic2.png">
+                        </div>
+                        <div class="swiper-slide slide" style="width: 661.2px;">
+                            <img alt="sliderImg" loading="eager" width="135" height="106" decoding="async" data-nimg="1" style="color: transparent;" src="images/thirpic3.png">
+                        </div>
+                        <div class="swiper-slide slide" style="width: 661.2px;">
+                            <img alt="sliderImg" loading="eager" width="237" height="106" decoding="async" data-nimg="1" style="color: transparent;" src="images/thirpic4.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fourthSection">
+            <div class="fixContainer content4">
+                <div class="treduIntro">
+                    <div class="heading">
+                        <h1>
+                            Introducing
+                            <span>Tredu</span>
+                        </h1>
+                        <h4>by Upmarket Academy</h4>
+                    </div>
+                    <div class="pera">
+                        <p>
+                            "Your gateway to mastering the art of online trading. With a robust blend of live classes and comprehensive trading courses, Tredu empowers You
+                            with the knowledge and skills needed to navigate the financial markets with confidence. Whether you are a seasoned trader or just starting Your
+                            journey, our platform is designed to help you thrive. Join us today and unlock the potential of profitable trading while expanding Your
+                            financial acumen"
+                        </p>
+                    </div>
+                </div>
+                <div class="treduIntroRight">
+                    <div class="imageBox imageanimation">
+                        <div class="blur"></div>
+                        <img alt="image4" loading="lazy" width="704" height="671" decoding="async" data-nimg="1" style="color: transparent;" src="images/fourpic.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fifthSection">
+            <div class="fixContainer">
+                <p>TESTIMONIALS</p>
+                <h1>
+                    "Trusted by"
+                    <span>Thousands</span>
+                </h1>
+                <div class="slider fifthSectionSliderwrapper" style="margin-top: 2rem;">
+                    <div class="swiper swiper-initialized swiper-horizontal mySwiper fifthSectionSlider swiper-backface-hidden">
+                        <div class="swiper-wrapper" style="transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(270px, 0px, 0px);">
+                            <div class="swiper-slide fifthSectionSliderslide swiper-slide-prev" style="margin-right: 20px;">
+                               <div style="width: 280px; background: white; box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 25px 0px; padding: 8px; border-radius: 10px; margin: auto auto 1rem;">
+                                <div style="background-color: rgb(247, 226, 255); height: 250px; border-radius: 10px; padding: 2rem 1rem; position: relative;">
+                                    <p style="font-weight: 500; font-size: 12px; text-align: justify; font-family: Poppins; word-break: break-all;">
+                                        The app is great for both finance beginners and experts alike. It offers a wide range of finance courses that are not only pocket-
+                                        friendly but also very helpful. Even the free courses and webinar content are ideal for those who want to start learning the stock market
+                                        basics.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div style="display: flex; align-items: center; gap: 1rem;">
+                                        <div style="width: 65px; height: 65px; position: relative; top: -1rem;"></div>
+                                        <div style="margin-top: -1rem;">
+                                            <h4>Dev Sahu</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="swiper-slide fifthSectionSliderslide swiper-slide-active" style="margin-right: 20px;">
+                                <div style="width: 280px; background: white; box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 25px 0px; padding: 8px; border-radius: 10px; margin: auto auto 1rem;">
+                                    <div style="background-color: rgb(247, 226, 255); height: 250px; border-radius: 10px; padding: 2rem 1 rem; position:relative">
+                                        <p style="font-weight: 500; font-size: 12px; text-align: justify; font-family: poppins; word-break: break-all;">
+                                            "I highly recommend Tredu for anyone looking to learn about the stock market, from begginers to advanced learner. The app offers a wide
+                                            range of useful features that are easy to use. Additionally, all the courses are affordable and reasonably priced."
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div style="display: flex; align-items: center; gap: 1rem;">
+                                            <div style="margin-top: -1rem;">
+                                                <h4>Amit Tyagi</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide fifthSectionSliderslide swiper-slide-next" style="margin-right: 20px;">
+                                <div style="width: 280px; background: white; box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 25px 0px; padding: 8px; border-radius: 10px; margin: auto auto 1rem;">
+                                    <div style="background-color: rgb(247, 226, 255); height:  250px; border-radius: 10px; padding: 2rem 1rem; position: relative;">
+                                        <p style="font-weight: 500; font-size: 12px; text-align: justify; font-family: Poppins; word-break: break-all;">
+                                            "The application is user-friendly and effortless to navigate. It's a cmplete package that covers all the components of the financial
+                                            market, making it a great tool to learn from. Overall, it is excellent value for money, keep up the excellent work, Tredu team."
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div style="display: flex; align-items: center; gap: 1rem;">
+                                            <div style="margin-top: -1rem;">
+                                                <h4>Aakriti Sharma</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide fifthSectionSliderslide" style="margin-right: 20px;">
+                                <div style="width: 280px; background: white; box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 25px 0px; padding: 8px; border-radius: 10px; margin: auto auto 1rem;">
+                                    <div style="background-color: rgb(247, 226, 255); height: 250px; border-radius: 10px; padding: 2rem 1rem; position: relative;">
+                                        <p style="font-weight: 500; font-size: 12px; text-align: justify; font-family: poppins; word-break: break-all;">
+                                            Tredu provides comprehensive information about the basic and advances of tyhe stock martket, making it very helpful. The webinars and
+                                            courses are amazing, and the experts delivering them are very knowledgeable. The courses are ideal for both beginners and experts.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div style="display: flex; align-items: center; gap: 1rem;">
+                                            <div style="margin-top: -1rem;">
+                                                <h4>Ayesha Khan</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottomLine">
+                        <div class="innerLine">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sixSection">
+            <div class="fixContainer" style="padding-top: 7rem;">
+                <div>
+                    <p class="experiencep" style="color: rgb(247, 226, 255); text-align: center; margin-bottom: 1rem;">STUDENTS experiencep</p>
+                    <div class="experienceHeading">
+                        <h1 style="color: rgb(247, 226, 255); font-weight: 400; font-size: 2rem;">
+                            "Take A Look At Others"
+                            <span class="common">Experience</span>
+                        </h1>
+                    </div>
+                    <div class="swiper swiper-initialized swiper-horizontal mySwiper experienceSlider swiper-backface-hidden">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide experienceCard swiper-slide-active" style="width: 1420px; margin-right: 15px;">
+                                <div style="width: min(1200px, 95%); margin: auto; border-radius: 10px; padding: 1rem; background: linear-gradient(254deg, rgb(56, 28, 69) -1 0.04%, rgba(27, 8, 36, 0) 48.12%, rgb(58, 29, 71) 103.18%);">
+                                    <div class="videos">
+                                        <div class="wrapper"></div>
+                                        <video id="0" class="videolist" playsinline style="border-radius: 5px;" controls>
+                                            <source src="images/demoVideo.mp4" type="video/mp4">
+                                            "Your browser does not support the video tag."
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sevenSection">
+            <div class="packages fixContainer">
+                <p style="color: #fff; text-align: center;">PREMIUM</p>
+                <h1 style="color: #fff; text-align: center; font-size: 2.5rem; margin-top: 1rem; margin-bottom: 8rem;">
+                    "Explore our"
+                    <span class="common">Premium Features</span>
+                </h1>
+                <div class="packageContainer">
+                    <div style="position: absolute; background: rgba(170, 12, 238, 0.71); width: 400px; height: 40%; border-radius: 50%; top: 90%;left:40%; transform:translate(-50%,-50%);filter:blur(300px)"></div>
+                    <div class="packageOne">
+                        <div class="imageBox">
+                            <img alt="basic" loading="lazy" width="110" height="100" decoding="async" data-nimg="1" style="color: transparent;width: 80px;" src="images/sevepic.png">
+                            <h1>Free</h1>
+                        </div>
+                        <div class="listbox">
+                            <ul>
+                                <li>
+                                    ::marker
+                                    "Free recorded Course"
+                                </li>
+                                <li>
+                                    ::marker
+                                    "Free Live Sessions"
+                                </li>
+                                <li>
+                                    ::marker
+                                    "Free Community groups access"
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="packageTwo">
+                        <div class="imageBox">
+                            <img alt="basic" loading="lazy" width="126" height="134" decoding="async" data-nimg="1" style="color: transparent; width: 80px;" src="images/sevepic2.png">
+                            <h1>Premium</h1>
+                        </div>
+                        <div class="listbox">
+                            <ul>
+                                <li>
+                                    ::marker
+                                    "Everything for free Users"
+                                </li>
+                                <li>
+                                    ::marker
+                                    "Advanced recorded courses"
+                                </li>
+                                <li>
+                                    ::marker
+                                    "Trading Strategies"
+                                </li>
+                                <li>
+                                    ::marker
+                                    "Exclusive Live Sessions"
+                                </li>
+                                <li>
+                                    ::marker
+                                    "Exclusive content on Community Groups"
+                                </li>
+                                <li>
+                                    ::marker
+                                    "Premium Support"
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="packageThree">
+                        <div class="imageBox">
+                            <img alt="basic" loading="lazy" width="106" height="90" decoding="async" data-nimg="1" style="color:transparent;width:80px" src="images/sevepic3.png">
+                            <h1>Trading Practise</h1> 
+                        </div>
+                        <div class="listbox">
+                            <ul>
+                                <li>
+                                    ::marker
+                                    "Free recorded Course"
+                                </li>
+                                <li>
+                                    ::marker
+                                    "Free Live session"
+                                </li>
+                                <li>
+                                    ::marker
+                                    "Free Community groups access"
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="eightSection">
+            <div class="fixContainer">
+                <div class="parallex" style="will-change: transform; transition: all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+                    <img alt="main" loading="lazy" width="800" height="800" decoding="async" data-nimg="1" style="color:transparent;width:min(1500px,98%);margin:auto" src="images/eighpic.png">
+                </div>
+                <div style="margin-top: 6rem;">
+                    <h1 class="eightHeading">Benefits of Joining Tredu</h1>
+                    <p style="color: #fff; width: min(800px, 98%); font-size: 1rem; font-family: poppins; text-align: center; margin: auto;">
+                        Experience the future of trading education with Tredu: Your gateway to interactive learning and real-world trading skills. Elevate your financial
+                        knowledge and take control of your investments, all in one powerful app.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="nineSection">
+            <div class="fixContainer mobilebenefitSection">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 3rem;">
+                    <img alt="title" loading="eager" width="53" height="68" decoding="async" data-nimg="1" style="color: transparent; width: 40px;" src="images/ninepic.png">
+                    <h1 style="color: #fff;">Comphrensive Learning</h1>
+                    <p style="color: #fff; opacity: 0.3; text-align: center;">
+                        Tredu provides a comphrehensive education in trading, from beginner to advanced levels. Gain access to a wide range of courses, webinars, and
+                        resources, ensuring you build a strong foundation and continuously improve your trading skills.
+                    </p>
+                    <div style="margin-top: 1rem; width: 80%;">
+                        <img alt="left" loading="lazy" width="400" height="400" data-nimg="1" style="color: transparent; object-fit: contain; aspect-ratio: 16/16;" src="images/ninelpic.png">
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 3rem;">
+                    <img alt="title" loading="eager" width="56" height="68" decoding="async" data-nimg="1" style="color: transparent; width: 40px;" src="images/ninepic2.png">
+                    <h1 style="color: #fff;">Interactive Simulation</h1>
+                    <p style="color: #fff; opacity: 0.3; text-align: center;">
+                        "Tredu offers hands-on experiences with interactive simulations. Explore real-world scenarios and practice trading techniques in a risk-free
+                        environment. These simulations help you understand complex concepts easily, making you more confident in your trading decisions."
+                    </p>
+                    <div style="margin-top: 1rem; width: 80%;">
+                        <img alt="left" loading="lazy" width="400" height="400" decoding="async" data-nimg="1" style="color: transparent; object-fit: contain; aspect-ratio: 16/16;" src="images/ninel2pic.png">
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 3rem;">
+                    <img alt="title" loading="eager" width="70" height="57" decoding="async" data-nimg="1" style="color: transparent; width: 40px;" src="images/ninepic3.png/photo">
+                    <h1 style="color: #fff;">Personalized Guidance</h1>
+                    <p style="color: #fff; opacity: 0.3; text-align: center;">
+                        At Tredu, we provide personalize advice and guidance that is tailored to your unique learning pace and trading style. Our team of expert mentors
+                        is dedicated to ensuring that you understand every topic and is always available to answer your question.
+                    </p>
+                    <div style="margin-top: 1rem; width: 80%;">
+                        <img alt="left" loading="lazy" width="400" height="400" decoding="async" data-nimg="1" style="color: transparent; object-fit: contain; aspect-ratio: 16/16;" src="images/ninel3pic.png">
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 3rem;">
+                    <img alt="title" loading="eager" width="66" height="65" decoding="async" data-nimg="1" style="color: transparent; width: 40px;" src="images/ninepic4.png">
+                    <h1 style="color: #fff;">Community Support</h1>
+                    <p style="color: #fff; opacity: 0.3; text-align: center;">
+                        Tredu belives in the power of community. That's why we offer specialized groups tailored for different aspects of trading. By joining our
+                        community, you'll be able to engage daily with like-mined individuals, share insights, and learn from collective experiences. Being a part
+                        of Tredu's community ensures you never have to go through your trading experince alone.
+                    </p>
+                    <div style="margin-top: 1rem; width: 80%;">
+                        <img alt="left" loading="lazy" width="400" height="400" decoding="async" data-nimg="1" style="color: transparent; object-fit: contain; aspect-ratio: 16/16;" src="images/ninel4pic.png">
+                    </div>
+                </div> 
+            </div>
+            <div class="fixContainer benefitsContent screenBenefitContent">
+                <div class="benefitsContentWrapper">
+                    <div class="benefits">
+                        <div class="benefitleft">
+                            <div class="benefitBlur"></div>
+                            <img alt="1" loading="eager" width="375" height="620" decoding="async" data-nimg="1" src="images/ninelpic.png" style="color: transparent; width: 470px; position: absolute; z-index: 5; object-fit: contain; aspect-ratio: 16 / 16; margin-left: -600px;">
+                        </div>
+                        <div class="benefitRight">
+                            <div class="card active">
+                                <div class="svgImg">
+                                    <img alt="Comphrensive Learning" loading="eager" width="53" height="68" decoding="async" data-nimg="1" style="color:transparent;width:40px" src="images/ninepic.png">
+                                </div>
+                                <div class="title">
+                                    <h2>Comphrensive Learning</h2>
+                                    <p style="font-size: 0.8rem; margin-top: 1rem;">
+                                        "Tredu provides a comprehensive education in trading, from beginner to advanced levels. Gain access to a wide range of courses, webinars,
+                                        and resources, ensuring you build a strong foundation and continuously improve your trading skills."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="svgImg">
+                                    <img alt="Interactive Simulations" loading="eager" width="56" height="68" decoding="async" data-nimg="1" style="color:transparent;width:40px" src="images/ninepic2.png">
+                                </div>
+                                <div class="title">
+                                    <h2>Interactive Simulations</h2>
+                                    <p style="font-size: 0.8rem; margin-top: 1rem;">
+                                            "Tredu offers hands-on experiences with interactive simulations. Explore real-world scenarios and practice trading techniques in a risk-
+                                            free environment. These simulations help you understand complex concepts easily, making you more confident in your trading
+                                            decisions."                        
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="svgImg">
+                                    <img alt="Personalized Guidance" loading="eager" width="70" height="57" decoding="async" data-nimg="1" style="color:transparent;width:40px" src="images/ninepic3.png">
+                                </div>
+                                <div class="title">
+                                    <h2>Personalized Guidance</h2>
+                                    <p style="font-size: 0.8rem; margin-top: 1rem;">
+                                        "At Tredu, we provide personalized advice and guidance that is tailored to your unique learning pace and trading style. Our team of expert
+                                        mentors is dedicated to ensuring that you understand every topic and is always available to answer your questions."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="svgImg">
+                                    <img alt="Community Support" loading="eager" width="66" height="65" decoding="async" data-nimg="1" style="color:transparent;width:40px" src="images/ninepic4.png">
+                                </div>
+                                <div class="title">
+                                    <h2>Communtiy Support</h2>
+                                    <p style="font-size: 0.8rem; margin-top: 1rem;">
+                                        "Tredu believes in the power of community. That's why we offer specialized groups tailored for different aspects of trading. By joining
+                                        our community, you'll be able to engage daily with like-minded individuals, share insights, and learn from collective experiences. Being a
+                                        part of Tredu's community ensures you never have to go through your trading experience alone."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="fixContainer" style="color: #fff;">
+                <h2 class="tenheading">
+                    "Unlock Your"
+                    <span>Financial Potential</span>
+                </h2>
+                <h1 class="heading2">Trading and Investing for All</h1>
+                <div style="margin-top: 2rem;">
+                    <img alt="profe" loading="lazy" width="2808" height="1592" decoding="async" data-nimg="1" style="color: transparent; width: min(1200px,98%); margin: auto;" src="images/tenpic.png">
+                </div>
+            </div>
+        </section>
+        <section class="twelveSection">
+            <div style="color: #fff; text-align: center; margin-bottom: 2rem; margin-top: 2rem;" class="twelveContent">
+                <p style="font-family: Poppins;">Trusted by</p>
+                <h1 style="font-size: 2rem; margin-top: 1rem;">
+                    "Our Prestigous"
+                    <!-- -->
+                    <div class="prestigous">
+                        <span class="common">Partners</span>
+                    </div>
+                </h1>
+                <div style="background-color: #fff; padding: 1rem 0; margin-top: 2rem; position: relative;">
+                    <div style="width: 400px; height: 400px; background: rgba(170, 12, 238, 0.56); position: absolute; right: 0; filter: blur(250px); border-radius: 50%; justify-content: center; align-items: center;"></div>
+                    <div class="partner">
+                        <img alt="sliderImg" loading="eager" width="200" height="100" decoding="async" data-nimg="1" style="color: transparent;" src="images/twelvepic1.png">
+                        <img alt="sliderImg" loading="eager" width="1000" height="1000" decoding="async" data-nimg="1" style="color: transparent;" src="images/twelvepic2.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="thirteen fixContainer">
+            <div style="color: white; margin-top: 2rem;">
+                <h1 style="font-size: 2.5rem; text-align: center; width: min(700px,98%); margin: auto; font-weight: 400;">
+                    "Be A part of Trading Community with"
+                    <!-- -->
+                    <span class="common">Tredu</span>
+                </h1>
+                <p style="text-align: center; margin-top: 1rem;">Download Our Mobile App & Trade Smarter, Learn Faster, Earn Better</p>
+            </div>
+            <div class="thirteencontent fixContainer">
+                <div class="community">
+                    <div class="communityLeft">
+                        <div class="image imageanimation"></div>
+                    </div>
+                    <div class="communityright">
+                        <div class="social">
+                            <a class="apple" target="_blank" href="https://apps.apple.com/in/app/tredu-by-upmarket-academy/id6466299716">
+                                <div style="width: 20%;" class="socialimage">
+                                    <img alt="apple" loading="eager" width="100" height="200" decoding="async" data-nimg="1" style="color: transparent;" src="images/thirtpic1.png">
+                                </div>
+                                <div style="color: white;">
+                                    <p style="font-weight: 400; font-size: 1.2rem; margin-bottom: 2px; margin-left: 2rem;">
+                                        "Download on the"
+                                        <!-- -->
+                                    </p>
+                                    <h2>App Store</h2>
+                                </div>
+                            </a>
+                            <a target="blank" class="google" href="https://play.google.com/store/apps/details?id=com.tredu">
+                                <div style="width: 20%;" class="socialimage">
+                                    <img alt="google" loading="eager" width="90" height="90" decoding="async" data-nimg="1" style="color: transparent;" src="images/thirtpic2.png">
+                                </div>
+                                <div style="color: white;">
+                                    <p style="font-weight: 400; font-size: 1.2rem; margin-bottom: 2px; margin-left: 2rem;">
+                                        "Download on the"
+                                        <!-- -->
+                                    </p>
+                                    <h2>App Store</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="finalSection">
+            <div class="fixcontainer final">
+                <div class="box1">
+                    <div style="width: 120px;">
+                        <img alt="logo" loading="eager" width="120" height="120" decoding="async" data-nimg="1" style="color:transparent" src="images/logo.png">
+                    </div>
+                    <form action="javascript:void(0);">
+                        <div class="mobile_inputbox__1gJeL">
+                         <input type="tel" id="phone" required pattern="\d{10}" placeholder="Enter Mobile Number" name="phone" value>
+                         <div class="mobile_btn__qfrys">
+                            <button type="submit">Sign Up</button>
+                         </div>   
+                        </div>
+                    </form>
+                    <div style="color: #fff; display: flex; align-items: center; gap: 10px;">
+                        <div style="width:4px;height:4px;border-radius:50%;background-color:#fff"></div>
+                        <p style="font-weight:400">Sign up for free 7 day trial</p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li>
+                            <a target="blank" href="https://upmarketacademy.com/privacy-policy/"> 
+                                <!-- -->
+                                Terms and Condition
+                                <!-- -->
+                            </a> 
+                        </li>
+                        <li>
+                            <a target="blank" href="https://upmarketacademy.com/privacy-policy/"> 
+                                <!-- -->
+                                Privacy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box3">
+                    <div class="fImgBox">
+                        <img alt="main" loading="lazy" width="570" height="127" decoding="async" data-nimg="1" style="width: 200px;" src="images/finalpic.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="fixContainer">
+            <p style="color: #fff; text-align: center; margin-bottom: 1rem;">© 2023 - Tredu - Upmarket Academy</p>
+        </div>
+    </main>
+</body>
+</html>
