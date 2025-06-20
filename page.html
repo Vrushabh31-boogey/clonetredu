@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="icon" type="image/png" href="tredu_logo_28x28.png">
     <link rel="icon" type="image/png" href="tredu_logo_28x28.png">
     <title>tredu</title>
 </head>
@@ -63,6 +64,12 @@
         margin-top: 23px;
     }
 
+    @media (max-width: 1200px) {
+        .fixContainer {
+            width: 90%;
+        }
+    }
+
     .herosection
     .content .trade {
         display: grid;
@@ -79,6 +86,12 @@
         justify-content: center;
         flex-direction: column;
     }
+
+     @media (max-width: 768px) {
+        .herosection .content .trade {
+            padding: 0 1rem; /* Add padding for smaller screens */
+        }
+     }
 
     .herosection
     .content .trade .info h1 {
@@ -1011,6 +1024,269 @@
     .fixContainer {
         width: min(1420px,90%);
         margin: auto;
+    }
+
+     @media (max-width: 1200px) {
+        .fixContainer {
+            width: 90%;
+        }
+        .herosection .content .trade {
+            grid-template-columns: 1fr; /* Stack columns on smaller screens */
+            text-align: center;
+        }
+        .herosection .content .trade .info {
+            align-items: center; /* Center content when stacked */
+        }
+        .herosection .content .info .pera {
+            width: min(800px, 90%);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .herosection .content .trade .image2 {
+            margin-top: 2rem; /* Add space between stacked elements */
+        }
+        .herosection .content .trade .image2 img {
+            position: static !important; /* Reset absolute positioning */
+            width: 90% !important; /* Adjust width */
+            margin: auto; /* Center the image */
+        }
+        .secondSection .content2 {
+            flex-direction: column; /* Stack left and right boxes */
+            text-align: center;
+        }
+        .secondSection .leftBox,
+        .secondSection .rightBox {
+            width: 100%; /* Full width when stacked */
+            justify-content: center; /* Center content */
+        }
+        .fourthSection .content4 {
+            flex-direction: column; /* Stack intro and image sections */
+        }
+        .fourthSection .content4 .treduIntro,
+        .fourthSection .content4 .treduIntroRight {
+            width: 100%; /* Full width when stacked */
+            text-align: center;
+        }
+        .fourthSection .content4 .treduIntro .pera {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .fourthSection .content4 .treduIntroRight .imageBox {
+            justify-content: center; /* Center image when stacked */
+        }
+        .fifthSection .fifthSectionSliderwrapper .bottomLine .innerLine {
+            width: 200px; /* Adjust inner line width */
+        }
+        .packageContainer {
+            flex-direction: column; /* Stack packages vertically */
+            align-items: center; /* Center packages */
+        }
+        .packageOne, .packageThree, .packageTwo {
+            width: min(350px, 95%); /* Adjust package width */
+            padding: 1.5rem 1rem 3rem; /* Adjust padding */
+        }
+        .benefits {
+            flex-direction: column; /* Stack benefits content */
+            align-items: center;
+        }
+        .benefitLeft, .benefitRight {
+            width: 100%;
+            justify-content: center;
+        }
+        .benefitRight .card {
+            align-items: center; /* Center content within cards */
+            text-align: center;
+            flex-direction: column; /* Stack icon and text within card */
+        }
+        .card .icon {
+            margin-bottom: 0.5rem;
+        }
+        .box2 ul li {
+            flex-basis: 100%; /* Single column for footer links */
+            text-align: center;
+        }
+    }
+
+    /* For screens smaller than 768px (e.g., tablets and large smartphones) */
+    @media (max-width: 768px) {
+        .herosection .cornerBox {
+            width: 150px;
+            height: 150px;
+            top: -50px;
+            left: -50px;
+            filter: blur(80px);
+        }
+        .header_navbarMain__q9Z5G .header_navbarContainer__rqdf_ {
+            margin-top: 1rem;
+        }
+        .herosection .content .trade .info h1 {
+            font-size: 2.2rem;
+        }
+        .herosection .content .info .pera {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        .mobile_inputbox__1gJeL {
+            height: 45px;
+            padding: 0 0.5rem;
+        }
+        .mobile_inputbox__1gJeL input {
+            font-size: 14px;
+        }
+        .mobile_btn__qfrys button {
+            padding: 8px 1rem;
+            font-size: 0.9rem;
+        }
+        .listBox .list {
+            gap: 0.5rem;
+            flex-direction: column; /* Stack list items if needed */
+            text-align: center;
+        }
+        .p1, .p2 {
+            font-size: 0.9rem;
+        }
+        .secondSection .rightBox .p3, .secondSection .rightBox h2 {
+            font-size: 1.2rem;
+        }
+        .fourthSection .content4 {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+        .fourthSection .content4 .treduIntro .heading h1 {
+            font-size: 2rem;
+        }
+        .fourthSection .content4 .treduIntro .heading h4 {
+            font-size: 1.2rem;
+        }
+        .fourthSection .content4 .treduIntro .pera {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        .fifthSection .fixContainer h1 {
+            font-size: 2rem;
+        }
+        .fifthSection .fifthSectionSliderWrapper .bottomLine {
+            width: 90%;
+        }
+        .eightHeading {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+        }
+        .packageOne, .packageThree, .packageTwo {
+            padding: 1.5rem 0.8rem 3rem; /* Further reduce padding */
+        }
+        .packageOne .imageBox h1, .packageTwo .imageBox h1, .packageThree .imageBox h1 {
+            font-size: 2.2rem;
+        }
+        .packageTwo .imageBox h1 {
+            font-size: 2.5rem;
+        }
+        .tenheading {
+            font-size: 1.2rem;
+        }
+        .heading2 {
+            font-size: 2rem;
+        }
+        .twelveSection .twelveContent h1 {
+            font-size: 2.2rem;
+        }
+        .thirteen .thirteencontent h1 {
+            font-size: 2rem;
+        }
+        .communityright .social .apple, .communityright .social .google {
+            padding: 10px 1.5rem;
+        }
+        .communityright .social span {
+            font-size: 1rem;
+        }
+        .finalSection .final {
+            padding: 2rem;
+            flex-direction: column; /* Stack footer boxes */
+            align-items: center;
+        }
+        .finalSection .final .box1, .box2 {
+            width: 100%;
+            text-align: center;
+        }
+        .box2 h2 {
+            text-align: center;
+        }
+    }
+
+    /* For screens smaller than 480px (e.g., small smartphones) */
+    @media (max-width: 480px) {
+        .herosection .content .trade .info h1 {
+            font-size: 1.8rem;
+        }
+        .herosection .content .info .pera {
+            font-size: 0.85rem;
+        }
+        .mobile_inputbox__1gJeL {
+            flex-direction: column;
+            height: auto;
+            padding: 10px;
+        }
+        .mobile_inputbox__1gJeL input {
+            width: 100%;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .mobile_btn__qfrys button {
+            width: 100%;
+            padding: 12px;
+        }
+        .secondSection .rightBox .p3, .secondSection .rightBox h2 {
+            font-size: 1rem;
+        }
+        .fourthSection .content4 .treduIntro .heading h1 {
+            font-size: 1.8rem;
+        }
+        .fourthSection .content4 .treduIntro .heading h4 {
+            font-size: 1rem;
+        }
+        .fifthSection .fixContainer h1 {
+            font-size: 1.8rem;
+        }
+        .eightHeading {
+            font-size: 2rem;
+        }
+        .packageOne, .packageThree, .packageTwo {
+            width: 98%; /* Even wider for very small screens */
+            padding: 1rem 0.5rem 2.5rem;
+        }
+        .packageOne .imageBox h1, .packageTwo .imageBox h1, .packageThree .imageBox h1 {
+            font-size: 2rem;
+        }
+        .packageTwo .imageBox h1 {
+            font-size: 2.2rem;
+        }
+        .tenheading {
+            font-size: 1rem;
+        }
+        .heading2 {
+            font-size: 1.8rem;
+        }
+        .twelveSection .twelveContent h1 {
+            font-size: 1.8rem;
+        }
+        .thirteen .thirteencontent h1 {
+            font-size: 1.8rem;
+        }
+        .communityright .social .apple, .communityright .social .google {
+            flex-direction: column;
+            text-align: center;
+            padding: 10px;
+        }
+        .communityright .social img {
+            margin-right: 0;
+            margin-bottom: 0.5rem;
+        }
+        .finalSection .final {
+            padding: 1.5rem;
+        }
+        .box2 ul li a {
+            font-size: 0.9rem;
+        }
     }
 </style>
 <body>
